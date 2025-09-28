@@ -1,16 +1,11 @@
-<nav class="navigation">
-	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
-	{{ end }}
-	{{ with .Site.Params.archive }}<a href="{{ "/posts" | relURL }}">{{ . }}</a>{{ end }}
-	{{ with .Site.Params.tags }}<a href="{{ "/tags" | relURL }}">{{ . }}</a>{{ end }}
-	{{ with .Site.Params.about }}<a href="{{ "/about" | relURL }}">{{ . }}</a>{{ end }}
-
-	{{ range $element := .Site.Params.Links }}
-		<a href="{{ $element.path }}">{{ $element.name }}</a>
-	{{ end }}
-
-	{{ if .Site.Params.enableRSS }}
-	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
-	{{ end }}
+<div class="title-bar">
+	<div class="title-top">P.M.Bryant</div>
+	<div class="title-bottom">Classic Hollywood research and essays with a focus on Ida Lupino</div>
+</div>
+<nav class="menu-bar">
+	<div class="menu-items">
+		<a class="menu-item" href="#">Home</a>
+		<a class="menu-item" href="x/letyourselfgo/">Let Yourself Go</a>
+		<a class="menu-item" href="x/b_and_b/">B and B</a>
+	</div>
 </nav>

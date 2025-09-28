@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="tip">
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "wordCount" . }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "minuteRead" . }}
+        </span>
+    </div>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+    {{ end}}
+
+</section>
+
+{{ end }}
+

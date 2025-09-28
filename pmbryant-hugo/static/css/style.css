@@ -1,0 +1,157 @@
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+}
+.blog-title {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #1a2a4d;
+    margin-bottom: 0.3em;
+    margin-top: 1.2em;
+}
+.blog-title a,
+.blog-title a:visited,
+.blog-title a:active {
+    color: #1a2a4d !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+.blog-years {
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding-left: 0.5rem;
+}
+body {
+    margin: 0;
+    background: #333;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.title-bar {
+    width: 100%;
+    background: url('../images/MillCreekPanorama2018.JPG') center center/cover no-repeat, #fff;
+    padding: 32px 32px 36px 32px;
+    border-bottom: 1px solid #eee;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    position: relative;
+}
+.title-bar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.60);
+    z-index: 0;
+}
+.title-top, .title-bottom {
+    position: relative;
+    z-index: 1;
+}
+.title-top {
+    color: #222;
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin-bottom: 6px;
+    text-align: left;
+}
+.title-bottom {
+    color: #222;
+    font-size: 1.08rem;
+    font-weight: 400;
+    text-align: left;
+    font-variant: small-caps;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.menu-bar {
+    width: 100%;
+    background: #e3e7f0;
+    color: #222;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+.menu-items {
+    display: flex;
+    gap: 56px;
+}
+.menu-item {
+    color: #222;
+    font-size: 0.92rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+.main-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    background: #fff;
+    padding: 32px;
+    box-sizing: border-box;
+}
+.text-area {
+    max-width: 700px;
+    flex: 1 1 0;
+}
+.text-area ul {
+    padding-left: 2.0em;
+}
+.text-area li {
+    margin-bottom: 24px;
+}
+.image-area {
+    max-width: 400px;
+    flex: 0 0 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding-left: 32px;
+}
+.black-square {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    background: #111;
+    border-radius: 8px;
+    display: block;
+}
+@media (max-width: 900px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+    .title-bar, .menu-bar, .main-row {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .main-row {
+        flex-direction: column;
+        padding: 24px 12px;
+    }
+    .image-area {
+        padding-left: 0;
+        max-width: 100%;
+        flex: 1 1 0;
+        justify-content: center;
+    }
+    .black-square {
+        max-width: 180px;
+    }
+}
