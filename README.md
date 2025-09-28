@@ -1,3 +1,7 @@
+# pmbryant.com
+
+In progress
+
 # Archive of Typepad blogs 'B and B' and 'Let Yourself Go'
 
 Both of my pmbryant.typepad.com Typepad blogs 'B and B' (2004-2012) 
