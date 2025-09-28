@@ -1,6 +1,6 @@
 # pmbryant.com
 
-In progress.
+In progress
 
 # Archive of Typepad blogs 'B and B' and 'Let Yourself Go'
 
